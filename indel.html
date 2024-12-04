@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="jiayi">
+        <title>Working with cookies</title>
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./assets/img/letter-n.png" type="x-icon">
+        <script src ="assets/js/cookies.js" defer></script>       
+    </head>
+    <body>            
+        <div class="hero">
+            <div class="hero-content">
+              <h1>Winter has come, can spring be far behind?</h1>
+              <p>So let us cherish winter's grace, its crystal air and light,<br>
+                And know that spring, with tender touch, will soon kiss day and night.<br>
+                For as the seasons turn and dance, in time's eternal play,<br>
+                We find that winter's end is near, and spring is on its way.</p>
+            </div>
+
+            <div id="cookieModal" class="modal cookieModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cookie Notice</h2>
+                    <p>We use cookies to improve your experience on our website. By clicking "Accept All," you agree to the use of cookies for marketing and analytics purposes.</p>
+                    <div class="button-container">
+                        <button class="acceptAll">Accept All</button>
+                        <button class="cookieSettings">Settings</button>
+                    </div>                    
+                </div>
+            </div>
+        
+            <div id="settingsModal" class="modal settingsModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cookie Settings</h2>
+                    <p>Customize your cookie preferences:</p>
+                    <div class="label-container">
+                        <label class="switch">
+                            <input type="checkbox" checked class="browserCookie">
+                            <span class="slider"></span>
+                            <span class="label-text">Browser Information</span>
+                        </label><br>
+                        <label class="switch">
+                            <input type="checkbox" checked class="osCookie">
+                            <span class="slider"></span>
+                            <span class="label-text">Operating System Information</span>
+                        </label><br>
+                        <label class="switch">
+                            <input type="checkbox" checked class="screenCookie">
+                            <span class="slider"></span>
+                            <span class="label-text">Screen Resolution</span>
+                        </label><br>
+                    </div>                    
+                                      
+                    <button class="saveSettings">Save</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
